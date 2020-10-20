@@ -6,7 +6,7 @@
     <title>Document</title>
 
 <?php
-$filename = 'data/data.txt';
+$filename = './data/data.txt';
 $errMessage = "エラーが発生しました。";
 
 //fopen ファイルまたは URL をオープンする r:読み込みのみでオープン

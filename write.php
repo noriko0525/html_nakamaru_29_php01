@@ -9,10 +9,11 @@ $q3 = $_POST['q3'];
 $str = $q1 .',' .$q2 .',' .$q3;
 
 //fopen ファイルまたは URL をオープンする a:書き出し用のみでオープン
-$file = fopen('data/data.txt','a');
+$file = fopen('./data/data.txt','a');
 //fwrite バイナリセーフなファイル書き込み処理
 fwrite($file,$str . "\n");
 //fclose オープンされたファイルポインタをクローズする
 fclose($file);
 
+header("Location: read.php");
 ?>
